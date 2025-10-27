@@ -122,11 +122,7 @@ pub struct PhidgetInfo {
     /// The serial number of the device.
     /// If the device is part of a VINT, this is the serial number of the VINT hub.
     pub serial_number: i32,
-    /// The hub port (if any)
-    #[cfg_attr(
-        feature = "serde",
-        serde(default, skip_serializing_if = "<&bool>::not")
-    )]
+    /// If there's a hub port
     pub is_hub_port_device: bool,
     /// The hub port (if any)
     #[cfg_attr(feature = "serde", serde(skip_serializing_if = "Option::is_none"))]
