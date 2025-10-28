@@ -23,9 +23,6 @@ use std::{
 #[cfg(feature = "serde")]
 use serde::{Deserialize, Serialize};
 
-#[cfg(feature = "serde")]
-use std::ops::Not;
-
 /// The signature for device attach callbacks
 pub type AttachCallback = dyn Fn(&PhidgetRef) + Send + 'static;
 

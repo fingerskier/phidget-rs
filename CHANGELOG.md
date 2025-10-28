@@ -1,5 +1,10 @@
 # Change Log for phidget-rs library crate
 
+## [v0.4.1](https://github.com/fpagliughi/phidget-rs/compare/v0.4.0..v0.4.1)  - 2024-10-27
+
+- [#15](https://github.com/fpagliughi/phidget-rs/pull/15) PhidgetInfo: Always include is_hub_port_device when serializing
+
+
 ## [v0.4.0](https://github.com/fpagliughi/phidget-rs/compare/v0.3.1..v0.4.0)  - 2024-05-08
 
 - Attach & Detach callbacks are now device-specific for all the devices
