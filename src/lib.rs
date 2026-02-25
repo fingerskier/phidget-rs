@@ -128,8 +128,10 @@ pub use crate::net::ServerType;
 /// Module containing all implemented devices
 pub mod devices;
 pub use crate::devices::{
-    current_input::CurrentInput, digital_input::DigitalInput, digital_output::DigitalOutput,
-    hub::Hub, humidity_sensor::HumiditySensor, pressure_sensor::PressureSensor,
+    current_input::CurrentInput, dc_motor::DcMotor, digital_input::DigitalInput,
+    digital_output::DigitalOutput, encoder::Encoder, hub::Hub,
+    humidity_sensor::HumiditySensor,
+    motor_position_controller::MotorPositionController, pressure_sensor::PressureSensor,
     temperature_sensor::TemperatureSensor, voltage_input::VoltageInput,
     voltage_output::VoltageOutput, voltage_ratio_input::VoltageRatioInput,
 };

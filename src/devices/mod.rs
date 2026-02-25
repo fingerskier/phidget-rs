@@ -55,3 +55,15 @@ pub use crate::devices::voltage_ratio_input::VoltageRatioInput;
 /// Phidget voltage output
 pub mod voltage_output;
 pub use crate::devices::voltage_output::VoltageOutput;
+
+/// Phidget DC motor
+pub mod dc_motor;
+pub use crate::devices::dc_motor::{DcMotor, DriveMode, FanMode};
+
+/// Phidget encoder
+pub mod encoder;
+pub use crate::devices::encoder::{Encoder, EncoderIoMode};
+
+/// Phidget motor position controller
+pub mod motor_position_controller;
+pub use crate::devices::motor_position_controller::{MotorPositionController, PositionType};
